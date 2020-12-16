@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - furry
+      - master
 
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
       - name: Checkout source Git branch
         uses: actions/checkout@v2
         with:
-            ref: furry
+            ref: master
             fetch-depth: 10
             submodules: true
             
